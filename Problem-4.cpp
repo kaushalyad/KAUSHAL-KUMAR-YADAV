@@ -8,11 +8,9 @@ public:
     void countMultiples(const vector<int>& arr) {
         map<int, int> result;
 
-        // initialize map with keys 1 to 9
         for (int i = 1; i <= 9; i++)
             result[i] = 0;
 
-        // count multiples
         for (int num : arr) {
             for (int i = 1; i <= 9; i++) {
                 if (num % i == 0)
@@ -20,7 +18,6 @@ public:
             }
         }
 
-        // display result
         cout << "{";
         for (int i = 1; i <= 9; i++) {
             cout << i << ": " << result[i];

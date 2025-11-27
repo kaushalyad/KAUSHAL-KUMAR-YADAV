@@ -6,9 +6,9 @@ public:
     void generate(int a) {
         int n;
         if (a % 2 == 0) 
-            n = a - 1;   // even input → reduce by 1
+            n = a - 1;   
         else 
-            n = a;       // odd input → same
+            n = a;      
 
         int num = 1;
         for (int i = 0; i < n; i++) {

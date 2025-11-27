@@ -4,11 +4,11 @@ using namespace std;
 class SeriesGenerator {
 public:
     void generate(int a) {
-        int num = 1;  // first odd number
+        int num = 1;  
         for (int i = 0; i < a; i++) {
             cout << num;
             if (i < a - 1) cout << ", ";
-            num += 2;  // next odd number
+            num += 2;  
         }
     }
 };
